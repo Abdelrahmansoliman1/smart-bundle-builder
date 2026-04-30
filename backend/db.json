@@ -1,0 +1,518 @@
+{
+  "items": [
+    {
+      "id": "cpu-1",
+      "name": "Intel Core i5",
+      "price": 250,
+      "category": "CPU",
+      "incompatibleWith": [
+        "mobo-2"
+      ]
+    },
+    {
+      "id": "cpu-2",
+      "name": "AMD Ryzen 5",
+      "price": 220,
+      "category": "CPU",
+      "incompatibleWith": [
+        "mobo-1"
+      ]
+    },
+    {
+      "id": "cpu-3",
+      "name": "Intel Core i7",
+      "price": 400,
+      "category": "CPU",
+      "incompatibleWith": [
+        "mobo-2"
+      ]
+    },
+    {
+      "id": "cpu-4",
+      "name": "AMD Ryzen 7",
+      "price": 350,
+      "category": "CPU",
+      "incompatibleWith": [
+        "mobo-1"
+      ]
+    },
+    {
+      "id": "mobo-1",
+      "name": "Intel Motherboard",
+      "price": 150,
+      "category": "Motherboard",
+      "incompatibleWith": [
+        "cpu-2",
+        "cpu-4"
+      ]
+    },
+    {
+      "id": "mobo-2",
+      "name": "AMD Motherboard",
+      "price": 140,
+      "category": "Motherboard",
+      "incompatibleWith": [
+        "cpu-1",
+        "cpu-3"
+      ]
+    },
+    {
+      "id": "mobo-3",
+      "name": "Intel High-End Motherboard",
+      "price": 220,
+      "category": "Motherboard",
+      "incompatibleWith": [
+        "cpu-2",
+        "cpu-4"
+      ]
+    },
+    {
+      "id": "mobo-4",
+      "name": "AMD High-End Motherboard",
+      "price": 210,
+      "category": "Motherboard",
+      "incompatibleWith": [
+        "cpu-1",
+        "cpu-3"
+      ]
+    },
+    {
+      "id": "ram-1",
+      "name": "16GB DDR4 RAM",
+      "price": 80,
+      "category": "RAM",
+      "incompatibleWith": []
+    },
+    {
+      "id": "ram-2",
+      "name": "32GB DDR4 RAM",
+      "price": 140,
+      "category": "RAM",
+      "incompatibleWith": []
+    },
+    {
+      "id": "ram-3",
+      "name": "16GB DDR5 RAM",
+      "price": 120,
+      "category": "RAM",
+      "incompatibleWith": [
+        "mobo-1",
+        "mobo-2"
+      ]
+    },
+    {
+      "id": "ram-4",
+      "name": "32GB DDR5 RAM",
+      "price": 200,
+      "category": "RAM",
+      "incompatibleWith": [
+        "mobo-1",
+        "mobo-2"
+      ]
+    },
+    {
+      "id": "gpu-1",
+      "name": "Basic GPU",
+      "price": 200,
+      "category": "GPU",
+      "incompatibleWith": []
+    },
+    {
+      "id": "gpu-2",
+      "name": "Mid-Range GPU",
+      "price": 400,
+      "category": "GPU",
+      "incompatibleWith": []
+    },
+    {
+      "id": "gpu-3",
+      "name": "High-End GPU",
+      "price": 600,
+      "category": "GPU",
+      "incompatibleWith": [
+        "psu-1"
+      ]
+    },
+    {
+      "id": "storage-1",
+      "name": "512GB SSD",
+      "price": 70,
+      "category": "Storage",
+      "incompatibleWith": []
+    },
+    {
+      "id": "storage-2",
+      "name": "1TB SSD",
+      "price": 120,
+      "category": "Storage",
+      "incompatibleWith": []
+    },
+    {
+      "id": "storage-3",
+      "name": "2TB SSD",
+      "price": 200,
+      "category": "Storage",
+      "incompatibleWith": []
+    },
+    {
+      "id": "psu-1",
+      "name": "500W Power Supply",
+      "price": 60,
+      "category": "PSU",
+      "incompatibleWith": [
+        "gpu-3"
+      ]
+    },
+    {
+      "id": "psu-2",
+      "name": "750W Power Supply",
+      "price": 110,
+      "category": "PSU",
+      "incompatibleWith": []
+    },
+    {
+      "id": "case-1",
+      "name": "Standard Case",
+      "price": 80,
+      "category": "Case",
+      "incompatibleWith": []
+    },
+    {
+      "id": "case-2",
+      "name": "Gaming Case",
+      "price": 120,
+      "category": "Case",
+      "incompatibleWith": []
+    }
+  ],
+  "build": {
+    "selected": {
+      "CPU": {
+        "id": "cpu-4",
+        "name": "AMD Ryzen 7",
+        "price": 350,
+        "category": "CPU",
+        "incompatibleWith": [
+          "mobo-1"
+        ]
+      },
+      "Motherboard": {
+        "id": "mobo-2",
+        "name": "AMD Motherboard",
+        "price": 140,
+        "category": "Motherboard",
+        "incompatibleWith": [
+          "cpu-1",
+          "cpu-3"
+        ]
+      },
+      "GPU": {
+        "id": "gpu-1",
+        "name": "Basic GPU",
+        "price": 200,
+        "category": "GPU",
+        "incompatibleWith": []
+      },
+      "PSU": {
+        "id": "psu-1",
+        "name": "500W Power Supply",
+        "price": 60,
+        "category": "PSU",
+        "incompatibleWith": [
+          "gpu-3"
+        ]
+      },
+      "Case": {
+        "id": "case-1",
+        "name": "Standard Case",
+        "price": 80,
+        "category": "Case",
+        "incompatibleWith": []
+      },
+      "Storage": {
+        "id": "storage-2",
+        "name": "1TB SSD",
+        "price": 120,
+        "category": "Storage",
+        "incompatibleWith": []
+      }
+    },
+    "history": [
+      {
+        "selected": {}
+      },
+      {
+        "selected": {
+          "CPU": {
+            "id": "cpu-1",
+            "name": "Intel Core i5",
+            "price": 250,
+            "category": "CPU",
+            "incompatibleWith": [
+              "mobo-2"
+            ]
+          }
+        }
+      },
+      {
+        "selected": {
+          "CPU": {
+            "id": "cpu-2",
+            "name": "AMD Ryzen 5",
+            "price": 220,
+            "category": "CPU",
+            "incompatibleWith": [
+              "mobo-1"
+            ]
+          }
+        }
+      },
+      {
+        "selected": {
+          "CPU": {
+            "id": "cpu-2",
+            "name": "AMD Ryzen 5",
+            "price": 220,
+            "category": "CPU",
+            "incompatibleWith": [
+              "mobo-1"
+            ]
+          },
+          "Motherboard": {
+            "id": "mobo-2",
+            "name": "AMD Motherboard",
+            "price": 140,
+            "category": "Motherboard",
+            "incompatibleWith": [
+              "cpu-1",
+              "cpu-3"
+            ]
+          }
+        }
+      },
+      {
+        "selected": {
+          "CPU": {
+            "id": "cpu-2",
+            "name": "AMD Ryzen 5",
+            "price": 220,
+            "category": "CPU",
+            "incompatibleWith": [
+              "mobo-1"
+            ]
+          },
+          "Motherboard": {
+            "id": "mobo-2",
+            "name": "AMD Motherboard",
+            "price": 140,
+            "category": "Motherboard",
+            "incompatibleWith": [
+              "cpu-1",
+              "cpu-3"
+            ]
+          },
+          "GPU": {
+            "id": "gpu-1",
+            "name": "Basic GPU",
+            "price": 200,
+            "category": "GPU",
+            "incompatibleWith": []
+          }
+        }
+      },
+      {
+        "selected": {
+          "CPU": {
+            "id": "cpu-2",
+            "name": "AMD Ryzen 5",
+            "price": 220,
+            "category": "CPU",
+            "incompatibleWith": [
+              "mobo-1"
+            ]
+          },
+          "Motherboard": {
+            "id": "mobo-2",
+            "name": "AMD Motherboard",
+            "price": 140,
+            "category": "Motherboard",
+            "incompatibleWith": [
+              "cpu-1",
+              "cpu-3"
+            ]
+          },
+          "GPU": {
+            "id": "gpu-1",
+            "name": "Basic GPU",
+            "price": 200,
+            "category": "GPU",
+            "incompatibleWith": []
+          },
+          "PSU": {
+            "id": "psu-1",
+            "name": "500W Power Supply",
+            "price": 60,
+            "category": "PSU",
+            "incompatibleWith": [
+              "gpu-3"
+            ]
+          }
+        }
+      },
+      {
+        "selected": {
+          "CPU": {
+            "id": "cpu-2",
+            "name": "AMD Ryzen 5",
+            "price": 220,
+            "category": "CPU",
+            "incompatibleWith": [
+              "mobo-1"
+            ]
+          },
+          "Motherboard": {
+            "id": "mobo-2",
+            "name": "AMD Motherboard",
+            "price": 140,
+            "category": "Motherboard",
+            "incompatibleWith": [
+              "cpu-1",
+              "cpu-3"
+            ]
+          },
+          "GPU": {
+            "id": "gpu-1",
+            "name": "Basic GPU",
+            "price": 200,
+            "category": "GPU",
+            "incompatibleWith": []
+          },
+          "PSU": {
+            "id": "psu-1",
+            "name": "500W Power Supply",
+            "price": 60,
+            "category": "PSU",
+            "incompatibleWith": [
+              "gpu-3"
+            ]
+          },
+          "Case": {
+            "id": "case-1",
+            "name": "Standard Case",
+            "price": 80,
+            "category": "Case",
+            "incompatibleWith": []
+          }
+        }
+      },
+      {
+        "selected": {
+          "CPU": {
+            "id": "cpu-2",
+            "name": "AMD Ryzen 5",
+            "price": 220,
+            "category": "CPU",
+            "incompatibleWith": [
+              "mobo-1"
+            ]
+          },
+          "Motherboard": {
+            "id": "mobo-2",
+            "name": "AMD Motherboard",
+            "price": 140,
+            "category": "Motherboard",
+            "incompatibleWith": [
+              "cpu-1",
+              "cpu-3"
+            ]
+          },
+          "GPU": {
+            "id": "gpu-1",
+            "name": "Basic GPU",
+            "price": 200,
+            "category": "GPU",
+            "incompatibleWith": []
+          },
+          "PSU": {
+            "id": "psu-1",
+            "name": "500W Power Supply",
+            "price": 60,
+            "category": "PSU",
+            "incompatibleWith": [
+              "gpu-3"
+            ]
+          },
+          "Case": {
+            "id": "case-1",
+            "name": "Standard Case",
+            "price": 80,
+            "category": "Case",
+            "incompatibleWith": []
+          },
+          "Storage": {
+            "id": "storage-2",
+            "name": "1TB SSD",
+            "price": 120,
+            "category": "Storage",
+            "incompatibleWith": []
+          }
+        }
+      },
+      {
+        "selected": {
+          "CPU": {
+            "id": "cpu-4",
+            "name": "AMD Ryzen 7",
+            "price": 350,
+            "category": "CPU",
+            "incompatibleWith": [
+              "mobo-1"
+            ]
+          },
+          "Motherboard": {
+            "id": "mobo-2",
+            "name": "AMD Motherboard",
+            "price": 140,
+            "category": "Motherboard",
+            "incompatibleWith": [
+              "cpu-1",
+              "cpu-3"
+            ]
+          },
+          "GPU": {
+            "id": "gpu-1",
+            "name": "Basic GPU",
+            "price": 200,
+            "category": "GPU",
+            "incompatibleWith": []
+          },
+          "PSU": {
+            "id": "psu-1",
+            "name": "500W Power Supply",
+            "price": 60,
+            "category": "PSU",
+            "incompatibleWith": [
+              "gpu-3"
+            ]
+          },
+          "Case": {
+            "id": "case-1",
+            "name": "Standard Case",
+            "price": 80,
+            "category": "Case",
+            "incompatibleWith": []
+          },
+          "Storage": {
+            "id": "storage-2",
+            "name": "1TB SSD",
+            "price": 120,
+            "category": "Storage",
+            "incompatibleWith": []
+          }
+        }
+      }
+    ],
+    "index": 8
+  },
+  "$schema": "./node_modules/json-server/schema.json"
+}
