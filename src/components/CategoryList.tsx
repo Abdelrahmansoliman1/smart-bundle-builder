@@ -101,10 +101,10 @@ export default function CategoryList({
                   text-slate-700 dark:text-slate-200
                 `}
               >
-                {/* LEFT */}
+                
                 <span>{item.name}</span>
 
-                {/* RIGHT */}
+                
                 <div className="flex items-center gap-2">
                   <span>${item.price}</span>
 

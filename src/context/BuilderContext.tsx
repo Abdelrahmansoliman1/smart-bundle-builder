@@ -9,7 +9,7 @@ import {
 
 import type { ReactNode } from "react";
 
-// ================= TYPES =================
+
 
 export type Category =
   | "CPU"
@@ -60,17 +60,17 @@ type BuilderContextType = {
   reset: () => void;
 };
 
-// ================= CONSTANTS =================
+
 
 const MAX_BUDGET = 1000;
 
-// ================= CONTEXT =================
+
 
 const BuilderContext = createContext<
   BuilderContextType | undefined
 >(undefined);
 
-// ================= PROVIDER =================
+
 
 export const BuilderProvider = ({
   children,
@@ -92,7 +92,7 @@ export const BuilderProvider = ({
 
   const [index, setIndex] = useState(0);
 
-  // ================= FETCH =================
+  
 
   useEffect(() => {
     const fetchData = async () => {
@@ -134,7 +134,7 @@ export const BuilderProvider = ({
     fetchData();
   }, []);
 
-  // ================= CURRENT =================
+  
 
   const current = history[index];
 
@@ -143,7 +143,7 @@ export const BuilderProvider = ({
   const canRedo =
     index < history.length - 1;
 
-  // ================= TOTAL =================
+  
 
   const total = Object.values(
     current.selected
@@ -153,7 +153,7 @@ export const BuilderProvider = ({
     0
   );
 
-  // ================= SAVE BUILD =================
+  
 
   const saveBuild = async (
     newHistory: State[],
@@ -186,7 +186,7 @@ export const BuilderProvider = ({
     }
   };
 
-  // ================= DISABLE REASON =================
+  
 
   const getDisableReason = (
     item: Item
@@ -194,12 +194,12 @@ export const BuilderProvider = ({
     const currentItem =
       current.selected[item.category];
 
-    // same selected item
+    
     if (currentItem?.id === item.id) {
       return null;
     }
 
-    // budget
+    
     const newTotal =
       total -
       (currentItem?.price || 0) +
@@ -209,7 +209,7 @@ export const BuilderProvider = ({
       return "Exceeds budget";
     }
 
-    // incompatibility
+    
     const conflictingItems =
       Object.values(
         current.selected
@@ -237,7 +237,7 @@ export const BuilderProvider = ({
     return null;
   };
 
-  // ================= SELECT =================
+  
 
   const selectItem = (item: Item) => {
     const reason =
@@ -248,7 +248,7 @@ export const BuilderProvider = ({
     const currentItem =
       current.selected[item.category];
 
-    // already selected
+    
     if (currentItem?.id === item.id) {
       return false;
     }
@@ -272,13 +272,13 @@ export const BuilderProvider = ({
 
     setIndex(index + 1);
 
-    // save backend
+    
     saveBuild(newHistory, index + 1);
 
     return true;
   };
 
-  // ================= UNDO =================
+  
 
   const undo = () => {
     if (!canUndo) return;
@@ -290,7 +290,7 @@ export const BuilderProvider = ({
     saveBuild(history, newIndex);
   };
 
-  // ================= REDO =================
+  
 
   const redo = () => {
     if (!canRedo) return;
@@ -302,7 +302,7 @@ export const BuilderProvider = ({
     saveBuild(history, newIndex);
   };
 
-  // ================= RESET =================
+  
 
   const reset = () => {
     const initialHistory = [
@@ -316,7 +316,7 @@ export const BuilderProvider = ({
     saveBuild(initialHistory, 0);
   };
 
-  // ================= PROVIDER =================
+  
 
   return (
     <BuilderContext.Provider
@@ -346,7 +346,7 @@ export const BuilderProvider = ({
   );
 };
 
-// ================= HOOK =================
+
 
 export const useBuilder = () => {
   const context =

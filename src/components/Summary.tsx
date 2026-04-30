@@ -32,15 +32,15 @@ export default function Summary() {
         h-fit
       "
     >
-      {/* Title */}
+      
       <h3 className="text-lg font-semibold mb-4">
         Build Summary
       </h3>
 
-      {/* Divider */}
+      
       <div className="border-b border-gray-200 dark:border-gray-700 mb-4" />
 
-      {/* Empty State */}
+      
       {items.length === 0 ? (
         <div className="flex flex-col items-center justify-center py-10 text-gray-400">
           <div className="text-5xl"><InboxOutlined /></div>
