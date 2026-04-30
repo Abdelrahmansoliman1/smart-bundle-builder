@@ -1,4 +1,3 @@
-// components/Summary.tsx
 import { useBuilder } from "../context/BuilderContext";
 import { Button, message, Popconfirm } from 'antd';
 import { DeleteOutlined, FilePdfOutlined } from '@ant-design/icons';

@@ -1,5 +1,3 @@
-// context/BuilderContext.tsx
-
 import {
   createContext,
   useContext,
@@ -77,7 +75,7 @@ export const BuilderProvider = ({
 }: {
   children: ReactNode;
 }) => {
-  // items from backend
+  
   const [items, setItems] = useState<Item[]>(
     []
   );
@@ -85,7 +83,7 @@ export const BuilderProvider = ({
   const [loading, setLoading] =
     useState(true);
 
-  // undo/redo history
+ 
   const [history, setHistory] = useState<
     State[]
   >([{ selected: {} }]);
@@ -97,7 +95,7 @@ export const BuilderProvider = ({
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // fetch items
+        
         const itemsRes = await fetch(
           "http://localhost:3001/items"
         );
@@ -105,7 +103,6 @@ export const BuilderProvider = ({
         const itemsData =
           await itemsRes.json();
 
-        // fetch build
         const buildRes = await fetch(
           "http://localhost:3001/build"
         );
@@ -115,7 +112,7 @@ export const BuilderProvider = ({
 
         setItems(itemsData);
 
-        // restore saved build
+       
         if (
           buildData.history &&
           buildData.index !== undefined
