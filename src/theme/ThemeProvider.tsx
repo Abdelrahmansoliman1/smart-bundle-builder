@@ -1,4 +1,3 @@
-// theme/ThemeProvider.tsx
 import { App as AntdApp, ConfigProvider, theme } from "antd";
 import { useLayoutEffect } from "react";
 import type { ReactNode } from "react";

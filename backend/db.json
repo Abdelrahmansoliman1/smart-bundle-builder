@@ -188,9 +188,9 @@
   "build": {
     "selected": {
       "CPU": {
-        "id": "cpu-3",
-        "name": "Intel Core i7",
-        "price": 400,
+        "id": "cpu-1",
+        "name": "Intel Core i5",
+        "price": 250,
         "category": "CPU",
         "incompatibleWith": [
           "mobo-2"
@@ -211,6 +211,13 @@
         "name": "32GB DDR4 RAM",
         "price": 140,
         "category": "RAM",
+        "incompatibleWith": []
+      },
+      "GPU": {
+        "id": "gpu-2",
+        "name": "Mid-Range GPU",
+        "price": 400,
+        "category": "GPU",
         "incompatibleWith": []
       }
     },
@@ -287,9 +294,9 @@
       {
         "selected": {
           "CPU": {
-            "id": "cpu-3",
-            "name": "Intel Core i7",
-            "price": 400,
+            "id": "cpu-1",
+            "name": "Intel Core i5",
+            "price": 250,
             "category": "CPU",
             "incompatibleWith": [
               "mobo-2"
@@ -310,13 +317,6 @@
             "name": "32GB DDR4 RAM",
             "price": 140,
             "category": "RAM",
-            "incompatibleWith": []
-          },
-          "Storage": {
-            "id": "storage-3",
-            "name": "2TB SSD",
-            "price": 200,
-            "category": "Storage",
             "incompatibleWith": []
           }
         }
@@ -324,9 +324,9 @@
       {
         "selected": {
           "CPU": {
-            "id": "cpu-3",
-            "name": "Intel Core i7",
-            "price": 400,
+            "id": "cpu-1",
+            "name": "Intel Core i5",
+            "price": 250,
             "category": "CPU",
             "incompatibleWith": [
               "mobo-2"
@@ -349,24 +349,17 @@
             "category": "RAM",
             "incompatibleWith": []
           },
-          "Storage": {
-            "id": "storage-3",
-            "name": "2TB SSD",
-            "price": 200,
-            "category": "Storage",
-            "incompatibleWith": []
-          },
-          "PSU": {
-            "id": "psu-2",
-            "name": "750W Power Supply",
-            "price": 110,
-            "category": "PSU",
+          "GPU": {
+            "id": "gpu-2",
+            "name": "Mid-Range GPU",
+            "price": 400,
+            "category": "GPU",
             "incompatibleWith": []
           }
         }
       }
     ],
-    "index": 3
+    "index": 5
   },
   "$schema": "./node_modules/json-server/schema.json"
 }

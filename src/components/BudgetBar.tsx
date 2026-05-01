@@ -1,4 +1,3 @@
-// components/BudgetBar.tsx
 import { Progress } from "antd";
 import { useBuilder } from "../context/BuilderContext";
 
